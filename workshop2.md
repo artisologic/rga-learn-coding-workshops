@@ -1,6 +1,6 @@
 #Workshop n°2 — HTML: Content + Semantic
 
-##Content is king.
+##Content is king
 
 * Content is 90% of our websites, the rest is just fluff.
 * So we need a way to display our content.
@@ -12,25 +12,26 @@
 
 ***
 
-##Enters **semantic**!
+##Enters **semantic**
 
 * Still, why do we need to **describe** our content?
-* Because without semantic, our content is just random text, without any meaning.
-* If we have a way to describe what our content is, we can figure out what it is even without *visulalising/rendering* it (SEO, accessibility, etc)
-* So how?
+* Because without semantic, our content is just random text. It has no meaning.
+* If we have a way to describe what our content is, then we can figure out what it is even without rendering it!
+* And so can anything! SEO, accessibility, anyone?
+* Ok, so how?
 
 ***
 
-##Enters **HTML**!
+##Enters **HTML**
 
-* HTML is just text with a **.html** extension…
+* HTML is just text in a text file with a **.html** extension…
 * … with a few rules.
 * It is a **markup** language.
 * A markup language is made up of a bunch of **tags**.
 * Tags may contain other tags.
 * Tags may also have **attributes**.
 
-###Minimal structure
+###A minimal structure
 
 ```
 <!DOCTYPE html>
@@ -82,7 +83,7 @@ A form input (checkbox):
 
 `<input type="checkbox">`
 
-###Some HTML5 tags
+###Some new HTML5 tags
 A header:
 
 `<header></header>`
@@ -101,4 +102,4 @@ A navigation:
 
 ***
 
-##Let's take all this and build something!
+##Let's take all this and build something, shall we?
