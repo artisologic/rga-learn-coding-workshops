@@ -1,0 +1,89 @@
+* {margin: 0; padding: 0;}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.main-header {
+	background-color: #eee;
+	padding: 40px;
+	margin-bottom: 20px;
+}
+
+.centered {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*
+	FILTERS
+ */
+
+.filter-action {
+	margin-bottom: 20px;
+}
+
+.filters-section {
+	margin-bottom: 20px;
+}
+
+.filters-list li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+
+
+/*
+	LAYOUT BUTTONS
+ */
+
+.layout-action {
+	margin-bottom: 40px;
+}
+
+.layout-views-list li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+
+
+/*
+	TWEETS
+ */
+
+.tweets-section h2 {
+	border-top: 1px solid blue;
+	border-bottom: 1px solid blue;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 24px;
+	line-height: 26px;
+}
+
+.tweets-list {
+	list-style: none;
+}
+
+.tweets-list li {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.tweets-list img {
+	float: left;
+	margin-right: 20px;
+}
+
+.tweets-list h3 {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.tweets-list p {
+	font-size: 14px;
+}
