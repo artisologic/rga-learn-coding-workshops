@@ -5,21 +5,23 @@
 		<title>My website</title>
 		<meta name="author" content="">
 		<meta name="description" content="This is my awesome website!">
+
+		<link rel="stylesheet" href="style-demo.css">
 	</head>
 
 	<body>
-		<header>
+		<header class="main-header">
 			<h1>My website</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, molestias eveniet sunt doloribus nihil facilis unde officiis quidem beatae ex?</p>
 		</header>
 
-		<div>
+		<div class="filter-action centered">
 			<button type="button">Show/hide filters</button>
 		</div>
 
-		<section>
+		<section class="filters-section centered">
 			<form action="/filtered" method="get">
-				<ul>
+				<ul class="filters-list">
 					<li>
 						<input id="filter-all" type="radio" name="filters" value="all" checked="checked">
 						<label for="filter-all">All</label>
@@ -44,27 +46,27 @@
 			</form>
 		</section>
 
-		<nav>
-			<ul>
+		<nav class="layout-action centered">
+			<ul class="layout-views-list">
 				<li><a href="grid-view.html" title="View this page as a grid">Grid view</a></li>
 				<li><a href="list-view.html" title="View this page as a list">List view</a></li>
 			</ul>
 		</nav>
 
-		<section>
+		<section class="tweets-section centered">
 			<h2>Tweets</h2>
-			<ol>
-				<li>
+			<ol class="tweets-list">
+				<li class="tweet-tag tag-design">
 					<img src="http://placekitten.com/g/80/80" alt="This is a photo of a cat">
 					<h3><a href="http://www.twitter.com" title="@username on twitter">Twitter username</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, reprehenderit, eos dolorum perferendis modi in ratione molestiae voluptatum repudiandae asperiores quibusdam ea quos debitis aspernatur optio necessitatibus tenetur inventore culpa?</p>
 				</li>
-				<li>
+				<li class="tweet-tag tag-ux">
 					<img src="http://placekitten.com/g/80/80" alt="This is a photo of a cat">
 					<h3><a href="http://www.twitter.com" title="@username on twitter">Twitter username</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, reprehenderit, eos dolorum perferendis modi in ratione molestiae voluptatum repudiandae asperiores quibusdam ea quos debitis aspernatur optio necessitatibus tenetur inventore culpa?</p>
 				</li>
-				<li>
+				<li class="tweet-tag tag-design">
 					<img src="http://placekitten.com/g/80/80" alt="This is a photo of a cat">
 					<h3><a href="http://www.twitter.com" title="@username on twitter">Twitter username</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, reprehenderit, eos dolorum perferendis modi in ratione molestiae voluptatum repudiandae asperiores quibusdam ea quos debitis aspernatur optio necessitatibus tenetur inventore culpa?</p>
