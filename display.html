@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trying to explain CSS Display</title>
+
+	<style>
+
+		.demo {
+			background: #eee;
+			padding: 30px;
+		}
+
+		.demo span,
+		.demo div {
+			background: #ff6666;
+			/*margin: 0 0 20px;*/
+			/*width: 25%;*/
+		}
+
+		.inline-block {
+			display: inline-block;
+		}
+
+		.red {
+			color: red;
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<h1>CSS Display</h1>
+
+	<ul>
+		<li>inline</li>
+		<li>inline-block</li>
+		<li>block</li>
+	</ul>
+	<em>There are plenty more but we'll focus on these ones today</em>
+
+	<hr>
+
+	<h2>Inline</h2>
+
+	<div class="demo">
+		<span>This is a span tag</span>
+		<span>This is a span tag</span>
+		<span>This is a span tag</span>
+	</div>
+
+	<h2>Inline-block</h2>
+
+	<div class="demo">
+		<span class="inline-block">This is a span tag</span>
+		<span class="inline-block">This is a span tag</span>
+		<span class="inline-block">This is a span tag</span>
+	</div>
+
+	<h2>Block</h2>
+
+	<div class="demo">
+		<div>This is a div tag</div>
+		<div>This is a div tag</div>
+		<div>This is a div tag</div>
+	</div>
+
+</body>
+</html>
