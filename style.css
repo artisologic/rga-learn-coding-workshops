@@ -4,6 +4,12 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+
+
+/*
+	GLOBAL
+ */
+
 .main-header {
 	background-color: #eee;
 	padding: 40px;
@@ -11,9 +17,11 @@ body {
 }
 
 .centered {
-	width: 960px;
+	width: 90%;
 	margin: 0 auto;
 }
+
+
 
 /*
 	FILTERS
