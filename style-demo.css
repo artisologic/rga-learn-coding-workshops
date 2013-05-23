@@ -1,0 +1,120 @@
+* {margin: 0; padding: 0;}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.centered {
+	width: 90%;
+	margin: 0 auto;
+}
+
+a {
+	color: brown;
+}
+
+
+
+/*
+	HEADER
+ */
+
+.main-header {
+	background-color: brown;
+	color: #ffffff;
+	padding: 40px;
+	margin-bottom: 20px;
+}
+
+.main-header h1 {
+	margin-bottom: 20px;
+}
+
+
+
+
+/*
+	FILTERS
+ */
+
+.filter-action {
+	margin-bottom: 20px;
+}
+
+.filters-section {
+	margin-bottom: 20px;
+}
+
+.filters-list li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+
+
+/*
+	LAYOUT BUTTONS
+ */
+
+.layout-action {
+	margin-bottom: 40px;
+}
+
+.layout-views-list li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+
+
+/*
+	TWEETS
+ */
+
+.tweets-section h2 {
+	border-top: 1px solid brown;
+	border-bottom: 1px solid brown;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 24px;
+	line-height: 26px;
+}
+
+.tweets-list {
+	list-style: none;
+}
+
+.tweets-list li {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.tweets-list img {
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+.tweets-list h3 {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.tweets-list p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.tweet-tag {
+	padding: 10px;
+}
+
+.tweets-list .tag-design {
+	background: #ffcccc;
+}
+
+.tweets-list .tag-ux {
+	background: #eeeeee;
+}
