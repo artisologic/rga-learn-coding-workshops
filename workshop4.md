@@ -1,10 +1,10 @@
-#Workshop n°4 — Responsive (media-queries)
+#Workshop n°4 — CSS: Responsive (media-queries)
 
 ##Why?
 
 * We need to be able to display our beautiful sites on any device…
 * … in a beautiful way!
-* The web landscape has evolved dramastically.
+* The web landscape has evolved dramatically.
 * We even have internet-enabled fridges!
 * So what are the tools we have?
 
@@ -12,10 +12,10 @@
 
 ##How?
 
-* First, the web is inherently responsive.
+* The web is inherently responsive.
 * Because it is inherently fluid.
 * Think percentage based dimensions.
-* Ok, but we need more than that to instigate bigger changes.
+* Ok, but we need more control!
 
 ***
 
@@ -63,12 +63,12 @@ Some more advanced media types:
 * `@media tv`
 
 ###Media features
-Some media features
+Some media features:
 
 * **width** – `min-width: 800px / max-width: 800px`
 * **height** – `min-height: 400px / max-height: 400px`
 
-Some more advanced media features
+Some more advanced media features:
 
 * **device-width**
 * **device-height**
