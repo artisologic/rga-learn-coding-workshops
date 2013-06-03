@@ -8,12 +8,40 @@ body {
 	font-size: 16px;
 }
 
+.toolbar {
+	background-color: #000;
+	padding: 20px 5%;
+}
+@media (min-height: 540px) {
+	.toolbar {
+		position: fixed;
+		width: 90%;
+	}
+}
+
 /*  Main Header */
 .main-header {
 	background-color: brown;
 	color: white;
-	padding: 30px;
+	padding: 30px 5%;
 	margin-bottom: 20px;
+}
+@media (min-height: 540px) and (max-width: 799px) {
+	.main-header {
+		padding-top: 80px;
+	}
+}
+
+.filters-section {
+	display: none;
+}
+@media (min-width: 800px) {
+	.filters-section {
+		display: block;
+	}
+	.toolbar {
+		display: none;
+	}
 }
 
 /* Global */
@@ -34,6 +62,15 @@ body {
 }
 
 /* Layout */
+.layout-nav {
+	display: none;
+}
+@media (min-width: 1200px) {
+	.layout-nav {
+		display: block;
+	}
+}
+
 .layout-list li {
 	display: inline;
 	font-size: 12px;
