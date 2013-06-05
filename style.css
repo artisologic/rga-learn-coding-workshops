@@ -35,6 +35,9 @@ body {
 .filters-section {
 	display: none;
 }
+.filters-section--show {
+	display: block;
+}
 @media (min-width: 800px) {
 	.filters-section {
 		display: block;

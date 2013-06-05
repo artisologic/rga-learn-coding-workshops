@@ -7,11 +7,58 @@
 		<meta name="description" content="This is my awesome website!">
 		
 		<link rel="stylesheet" href="style.css">
+		
+		<!-- load jQuery lib -->
+		<script src="jquery-2.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+		// jQuery document ready docs: http://learn.jquery.com/using-jquery-core/document-ready/
+		$(document).ready(function() {
+			
+			// attach an event handler to each filter, triggered when the selection changes
+			// jQuery change event docs: http://api.jquery.com/change/
+			$('.filter').change(function() {
+				
+				// get the value of the radio that has just been checked
+				var selectedFilterValue = $(this).val();
+				
+				// this value will be used to show/hide different types of tweet in the list
+				console.log('selected filter value:', selectedFilterValue);
+			});
+			
+			// jQuery click event docs: http://api.jquery.com/click/
+			$('#toggle-filters').click(function() {
+				// toggle (show/hide) a class on the filters section
+				$('.filters-section').toggleClass('filters-section--show');
+			});
+			
+			$('.view-link').click(function() {
+
+				if ($(this).hasClass('view-grid')) {
+					// grid view link clicked
+					console.log('grid link clicked');
+					
+					$('body').addClass('grid');
+					
+					
+				} else {
+					// list view link clicked
+					console.log('list link clicked');
+					
+					$('body').removeClass('grid');
+				}
+				
+				return false; // stop the browser following the href for now
+				
+			});
+			
+		});
+		</script>
 	</head>
 
 	<body>
 		<div class="toolbar">
-			<button type="button">Show/hide filters</button>
+			<button id="toggle-filters" type="button">Show/hide filters</button>
 		</div>
 		
 		<header class="main-header">
@@ -23,23 +70,23 @@
 			<form action="/filtered" method="get">
 				<ul class="filters-list">
 					<li>
-						<input id="filter-all" type="radio" name="filters" value="all" checked="checked">
+						<input id="filter-all" type="radio" name="filters" class="filter" value="all" checked="checked">
 						<label for="filter-all">All</label>
 					</li>
 					<li>
-						<input id="filter-tech" type="radio" name="filters" value="tech">
+						<input id="filter-tech" type="radio" name="filters" class="filter" value="tech">
 						<label for="filter-tech">Tech</label>
 					</li>
 					<li>
-						<input id="filter-copy" type="radio" name="filters" value="copy">
+						<input id="filter-copy" type="radio" name="filters" class="filter" value="copy">
 						<label for="filter-copy">Copy</label>
 					</li>
 					<li>
-						<input id="filter-ux" type="radio" name="filters" value="ux">
+						<input id="filter-ux" type="radio" name="filters" class="filter" value="ux">
 						<label for="filter-ux">UX</label>
 					</li>
 					<li>
-						<input id="filter-design" type="radio" name="filters" value="design">
+						<input id="filter-design" type="radio" name="filters" class="filter" value="design">
 						<label for="filter-design">Design</label>
 					</li>
 				</ul>
@@ -48,25 +95,25 @@
 
 		<nav class="layout-nav centered">
 			<ul class="layout-list">
-				<li><a href="grid-view.html" title="View this page as a grid">Grid view</a></li>
-				<li><a href="list-view.html" title="View this page as a list">List view</a></li>
+				<li><a href="grid-view.html" class="view-link view-grid" title="View this page as a grid">Grid view</a></li>
+				<li><a href="list-view.html" class="view-link view-list" title="View this page as a list">List view</a></li>
 			</ul>
 		</nav>
 
 		<section class="centered tweets-section">
 			<h2>Tweets</h2>
 			<ol class="tweets-list">
-				<li class="tweet-tag tag-ux">
+				<li class="tweet-tag tag-all tag-ux">
 					<img src="http://placekitten.com/g/80/80" alt="This is a photo of a cat">
 					<h3><a href="http://www.twitter.com" title="@username on twitter">Twitter username</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, reprehenderit, eos dolorum perferendis modi in ratione molestiae voluptatum repudiandae asperiores quibusdam ea quos debitis aspernatur optio necessitatibus tenetur inventore culpa?</p>
 				</li>
-				<li class="tweet-tag tag-design">
+				<li class="tweet-tag tag-all tag-design">
 					<img src="http://placekitten.com/g/80/80" alt="This is a photo of a cat">
 					<h3><a href="http://www.twitter.com" title="@username on twitter">Twitter username</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, reprehenderit, eos dolorum perferendis modi in ratione molestiae voluptatum repudiandae asperiores quibusdam ea quos debitis aspernatur optio necessitatibus tenetur inventore culpa?</p>
 				</li>
-				<li class="tweet-tag tag-ux">
+				<li class="tweet-tag tag-all tag-ux">
 					<img src="http://placekitten.com/g/80/80" alt="This is a photo of a cat">
 					<h3><a href="http://www.twitter.com" title="@username on twitter">Twitter username</a></h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, reprehenderit, eos dolorum perferendis modi in ratione molestiae voluptatum repudiandae asperiores quibusdam ea quos debitis aspernatur optio necessitatibus tenetur inventore culpa?</p>
