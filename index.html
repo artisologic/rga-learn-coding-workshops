@@ -7,11 +7,35 @@
 		<meta name="description" content="This is my awesome website!">
 		
 		<link rel="stylesheet" href="style.css">
+		<script src="jquery-2.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		// wait until the document is ready
+		$(document).ready(function(){
+			
+			$('.filter').change(function(){
+				var selectedFilterValue = $(this).val();
+				
+				// log to console
+				console.log(selectedFilterValue);
+			});
+			
+			$('#toggle-filters').click(function(){
+				
+				$('.filters-section').toggleClass('filters-section--show');
+				
+			});
+			
+			
+			
+		});
+		
+		</script>
+		
 	</head>
 
 	<body>
 		<div class="toolbar">
-			<button type="button">Show/hide filters</button>
+			<button id="toggle-filters" type="button">Show/hide filters</button>
 		</div>
 		
 		<header class="main-header">
@@ -23,23 +47,23 @@
 			<form action="/filtered" method="get">
 				<ul class="filters-list">
 					<li>
-						<input id="filter-all" type="radio" name="filters" value="all" checked="checked">
+						<input id="filter-all" type="radio" class="filter" name="filters" value="all" checked="checked">
 						<label for="filter-all">All</label>
 					</li>
 					<li>
-						<input id="filter-tech" type="radio" name="filters" value="tech">
+						<input id="filter-tech" type="radio" class="filter" name="filters" value="tech">
 						<label for="filter-tech">Tech</label>
 					</li>
 					<li>
-						<input id="filter-copy" type="radio" name="filters" value="copy">
+						<input id="filter-copy" type="radio" class="filter" name="filters" value="copy">
 						<label for="filter-copy">Copy</label>
 					</li>
 					<li>
-						<input id="filter-ux" type="radio" name="filters" value="ux">
+						<input id="filter-ux" type="radio" class="filter" name="filters" value="ux">
 						<label for="filter-ux">UX</label>
 					</li>
 					<li>
-						<input id="filter-design" type="radio" name="filters" value="design">
+						<input id="filter-design" type="radio" class="filter" name="filters" value="design">
 						<label for="filter-design">Design</label>
 					</li>
 				</ul>
