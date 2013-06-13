@@ -25,6 +25,8 @@
 				
 				// this value will be used to show/hide different types of tweet in the list
 				console.log('selected filter value:', selectedFilterValue);
+				
+				$('.tweets-list').attr('data-show', selectedFilterValue);
 			});
 			
 			// jQuery click event docs: http://api.jquery.com/click/

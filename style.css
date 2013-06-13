@@ -8,6 +8,16 @@ body {
 	font-size: 16px;
 }
 
+a {
+	color: black;
+	
+	-webkit-transition: all 400ms linear;
+}
+
+a:hover {
+	color: red;
+}
+
 .toolbar {
 	background-color: #000;
 	padding: 20px 5%;
@@ -33,13 +43,20 @@ body {
 }
 
 .filters-section {
-	display: none;
+	height: 0px;
+	overflow: hidden;
+	
+	-webkit-transition: height 400ms ease-in-out;
 }
+
 .filters-section--show {
-	display: block;
+	height: 60px;
 }
+
+
 @media (min-width: 800px) {
 	.filters-section {
+		height: auto;
 		display: block;
 	}
 	.toolbar {
@@ -99,6 +116,14 @@ body {
 	list-style: none;
 }
 
+@media (min-width: 1200px) {
+	.grid .tweets-list li {
+		box-sizing: border-box;
+		float: left;
+		width: 33%;
+	}
+}
+
 .tweets-list img {
 	float: left;
 	margin-right: 15px;
@@ -117,8 +142,55 @@ body {
 }
 
 
+[data-show] .tweet-tag {
+	display: none;
+}
+
+[data-show=ux] .tag-ux {
+	display: block;
+}
+
+[data-show=design] .tag-design {
+	display: block;
+}
+
+[data-show=all] .tag-all {
+	display: block;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*[data-show] .tweet-tag {
+	display: none;
+}
+
+[data-show=ux] .tag-ux {
+	display: block;
+}
+
+[data-show=design] .tag-design {
+	display: block;
+}
+
+
+[data-show=all] .tweet-tag {
+	display: block;
+}
+*/
 
 
 

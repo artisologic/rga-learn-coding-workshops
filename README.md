@@ -5,5 +5,7 @@ A series of workshop ran at R/GA to teach UX/Design people how to code
 
 ##Workshop1 — UX
 ##Workshop2 — HTML: Content + Semantic
-##Workshop3 — CSS: Basic introduction
+##Workshop3 — CSS: Basic Introduction
 ##Workshop4 — CSS: Responsive (media-queries)
+##Workshop5 — CSS: Responsive (media-queries)
+##Workshop6 — CSS: Basic Interactions
