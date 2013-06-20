@@ -25,4 +25,5 @@ A series of workshop ran at R/GA to teach UX/Design people how to code a basic w
 *Pedro Duarte*
 
 ##Workshop7 — Performance
+[https://www.dropbox.com/s/cjcdxte2vjug6z8/workshop7.mov](https://www.dropbox.com/s/cjcdxte2vjug6z8/workshop7.mov)
 *Andy Shora*
