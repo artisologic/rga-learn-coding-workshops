@@ -15,6 +15,7 @@ A series of workshop ran at R/GA to teach UX/Design people how to code a basic w
 *Pedro Duarte*
 
 ##Workshop4 — CSS: Responsive (media-queries)
+[https://dl.dropboxusercontent.com/u/3193107/rga-videos/workshop4.mov](https://dl.dropboxusercontent.com/u/3193107/rga-videos/workshop4.mov)
 *Benoit Grelard*
 
 ##Workshop5 — JavaScript
